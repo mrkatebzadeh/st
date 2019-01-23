@@ -207,7 +207,9 @@ MouseKey mkeys[] = {
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
-
+static char *openurlcmd[] = { "/bin/sh", "-c",
+    "xurls | dmen | tr -d '\n' | xclip -selection clipboard",
+"externalpipe", NULL };
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
@@ -226,6 +228,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_u,           externalpipe,   { .v = openurlcmd } },
+	{ ControlMask,          XK_u,           externalpipe,   { .v = openurlcmd } },
 };
 
 /*
