@@ -2040,7 +2040,7 @@ strhandle(void)
 	}
 
 	fprintf(stderr, "erresc: unknown str ");
-	strdump();
+	//strdump();
 }
 
 void
