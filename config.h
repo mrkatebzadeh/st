@@ -120,8 +120,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 15;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultcs = 3;
+static unsigned int defaultrcs = 4;
 
 /*
  * Default shape of cursor
@@ -175,7 +175,7 @@ ResourcePref resources[] = {
 		{ "color15",      STRING,  &colorname[15] },
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
-		{ "cursorColor",  STRING,  &colorname[258] },
+		{ "cursorColor",  STRING,  &colorname[3] },
 		{ "termname",     STRING,  &termname },
 		{ "shell",        STRING,  &shell },
 		{ "xfps",         INTEGER, &xfps },
