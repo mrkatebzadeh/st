@@ -8,7 +8,7 @@
 #ifndef DISABLE_GOHUFONT
 static char *font = "gohufont:autohint:pixelsize=14";
 #else
-static char *font = "Liberation Mono:pixelsize=15:antialias=true:autohint=true";
+static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
 #endif
 
 static int borderpx = 2;
