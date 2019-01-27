@@ -11,7 +11,7 @@ static char *font = "gohufont:autohint:pixelsize=14";
 static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
 #endif
 
-static int borderpx = 2;
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -185,6 +185,7 @@ ResourcePref resources[] = {
 		{ "blinktimeout", INTEGER, &blinktimeout },
 		{ "bellvolume",   INTEGER, &bellvolume },
 		{ "tabspaces",    INTEGER, &tabspaces },
+        { "borderpx",     INTEGER, &borderpx },
 		{ "cwscale",      FLOAT,   &cwscale },
 		{ "chscale",      FLOAT,   &chscale },
 		{ "alpha",      INTEGER,   &alpha },
