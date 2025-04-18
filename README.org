@@ -1,8 +1,21 @@
-* st
+* st - simple terminal
 
 This is a fork of the excellent [st](https://st.suckless.org/) terminal by Suckless (most recently based on st-0.8.1).
 ~st~ is configured by forking and applying appropriate patching and source modifications.
 This repository constitutes my personal configuration of ~st~.
+
+
+** Requirements
+In order to build st you need the Xlib header files.
+
+** Installation
+Edit ~config.mk~ to match your local setup (st is installed into the /usr/local namespace by default).
+
+Afterwards enter the following command to build and install st (if necessary as root):
+
+#+begin_src sh
+    make clean install
+#+end_src
 
 ** Changes From the Default:
 
@@ -22,5 +35,7 @@ not being detected correctly.
 
 Almost all of the code in this repository is not my work, but the work of the suckless engineering team (see suckless.org) or other members of the suckless community.
 This code is used with permission as defined in the [[https://git.suckless.org/st/file/LICENSE.html][suckless license]].
-
 Sixel-graphics related code was taken from this [[https://gist.github.com/saitoha/70e0fdf22e3e8f63ce937c7f7da71809][diff]] and modified.
+Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
+
+See the man page for additional details.
