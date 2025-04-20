@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font =  "monospace:size=18" ;
-static char *font2[] = { "FiraCodeNerdFont:pixelsize=18" };
+static char *font =  "monospace:size=16" ;
+static char *font2[] = { "FiraCodeNerdFont:pixelsize=16" };
 static int borderpx = 10;
 
 /*
