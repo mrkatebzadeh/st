@@ -1,17 +1,16 @@
-* st - simple terminal
+* Farman - minimalist terminal
 
 This is a fork of the excellent [st](https://st.suckless.org/) terminal by Suckless (most recently based on st-0.8.1).
-~st~ is configured by forking and applying appropriate patching and source modifications.
-This repository constitutes my personal configuration of ~st~.
+Farman is configured by forking st and applying appropriate patching and source modifications.
 
 
 ** Requirements
-In order to build st you need the Xlib header files.
+In order to build Farman you need the Xlib header files.
 
 ** Installation
-Edit ~config.mk~ to match your local setup (st is installed into the /usr/local namespace by default).
+Edit ~config.mk~ to match your local setup (~farman~ is installed into the /usr/local namespace by default).
 
-Afterwards enter the following command to build and install st (if necessary as root):
+Afterwards enter the following command to build and install Farman (if necessary as root):
 
 #+begin_src sh
     make clean install
